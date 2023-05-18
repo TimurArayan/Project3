@@ -123,6 +123,15 @@
     <None Include="Properties\московсский.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\food.png" />
+    <None Include="Properties\rubber.png" />
+    <None Include="Properties\metal.png" />
+    <None Include="Properties\wood.png" />
+    <None Include="Properties\glass.png" />
+    <None Include="Properties\plastic.png" />
+    <None Include="Properties\paper.png" />
+    <None Include="Properties\liquid.png" />
+    <None Include="Properties\solid.png" />
     <Content Include="Properties\авиастроительный.png" />
     <None Include="Properties\стекло.png" />
     <None Include="Properties\бумага.png" />

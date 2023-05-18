@@ -104,20 +104,13 @@ namespace Project3
                     About.trash_type3 += ", " + a.Text;
                 }
             }
-            if ((solid.Checked | liquid.Checked | gas.Checked) && (paper.Checked | plastic.Checked | glass.Checked | wood.Checked | metal.Checked | rubber.Checked | food.Checked) && (industrial.Checked | household.Checked))
+            if ((solid.Checked | liquid.Checked) && (paper.Checked | plastic.Checked | glass.Checked | wood.Checked | metal.Checked | rubber.Checked | food.Checked) && (industrial.Checked | household.Checked))
             {
                 panel3.Hide();
                 panel2.Show();
                 pp1.Hide();
                 pp2.Show();
 
-            }
-            else if (gas.Checked)
-            {
-                panel3.Hide();
-                panel2.Show();
-                pp1.Hide();
-                pp2.Show();
             }
             else
             {
@@ -302,7 +295,6 @@ namespace Project3
                 }
                 food.Enabled = false;
                 food.Checked = false;
-                gas.Enabled = true;
                 TypeOfGarbage.IsIndustrial = true;
                 Usual.Enabled = false;
                 pictureBox2.Image = global::Project3.Properties.Resources.Завод;
@@ -332,8 +324,6 @@ namespace Project3
                 liquid.Enabled = true;
                 metal.Enabled = false;
                 metal.Checked = false;
-                gas.Enabled = false;
-                gas.Checked = false;
                 TypeOfGarbage.IsIndustrial = false;
                 Usual.Enabled = true;
                 pictureBox2.Image = global::Project3.Properties.Resources.домик;
@@ -425,20 +415,6 @@ namespace Project3
             RefreshPrice();
         }
 
-        private void gas_CheckedChanged(object sender, EventArgs e)
-        {
-            if (gas.Checked)
-            {
-                pictureBox13.Show();
-                About.price += 20;
-            }
-            else
-            {
-                pictureBox13.Hide();
-                About.price -= 20;
-            }
-            RefreshPrice();
-        }
         private void paper_CheckedChanged(object sender, EventArgs e)
         {
             if (paper.Checked)

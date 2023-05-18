@@ -25,22 +25,6 @@ namespace Project3
             label14.Text = a1;
         }
 
-        void F(string a)
-        {
-            string b = "";
-            string c = "";
-            int l = a.Length;
-            if (l > 30)
-            {
-                for (int i = 30; i < a.Length; i++)
-                {
-                    if (a[i].Equals(','))
-                    {
-                        c += a[i];
-                    }
-                }
-                c.Remove(0, 1);
-            }
-        }
+
     }
 }

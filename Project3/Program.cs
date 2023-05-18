@@ -17,7 +17,7 @@ namespace Project3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Form2 f2 = new Form2();
-            Application.Run(new Form4());
+            Application.Run(new Form1());
         }
     }
 }

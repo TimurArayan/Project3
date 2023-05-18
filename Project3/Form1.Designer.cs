@@ -50,7 +50,6 @@
             this.glass = new System.Windows.Forms.CheckBox();
             this.metal = new System.Windows.Forms.CheckBox();
             this.p2 = new System.Windows.Forms.Panel();
-            this.gas = new System.Windows.Forms.CheckBox();
             this.liquid = new System.Windows.Forms.CheckBox();
             this.solid = new System.Windows.Forms.CheckBox();
             this.p1 = new System.Windows.Forms.Panel();
@@ -76,12 +75,20 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pp1 = new System.Windows.Forms.Panel();
+            this.pp2 = new System.Windows.Forms.Panel();
+            this.pp3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -89,15 +96,6 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pp1 = new System.Windows.Forms.Panel();
-            this.pp2 = new System.Windows.Forms.Panel();
-            this.pp3 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -106,12 +104,16 @@
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel8.SuspendLayout();
+            this.pp1.SuspendLayout();
+            this.pp2.SuspendLayout();
+            this.pp3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -119,11 +121,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.pp1.SuspendLayout();
-            this.pp2.SuspendLayout();
-            this.pp3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -418,26 +415,12 @@
             // 
             // p2
             // 
-            this.p2.Controls.Add(this.gas);
             this.p2.Controls.Add(this.liquid);
             this.p2.Controls.Add(this.solid);
             this.p2.Location = new System.Drawing.Point(20, 138);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(269, 31);
+            this.p2.Size = new System.Drawing.Size(211, 31);
             this.p2.TabIndex = 0;
-            // 
-            // gas
-            // 
-            this.gas.AutoSize = true;
-            this.gas.Enabled = false;
-            this.gas.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gas.Location = new System.Drawing.Point(213, 3);
-            this.gas.Name = "gas";
-            this.gas.Size = new System.Drawing.Size(53, 27);
-            this.gas.TabIndex = 2;
-            this.gas.Text = "Газ";
-            this.gas.UseVisualStyleBackColor = true;
-            this.gas.CheckedChanged += new System.EventHandler(this.gas_CheckedChanged);
             // 
             // liquid
             // 
@@ -743,58 +726,20 @@
             this.label16.Text = "0 руб.";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(350, 131);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel9
             // 
+            this.panel9.BackColor = System.Drawing.Color.White;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.pictureBox3);
-            this.panel9.Controls.Add(this.pictureBox13);
             this.panel9.Controls.Add(this.pictureBox4);
             this.panel9.Location = new System.Drawing.Point(11, 148);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(350, 109);
             this.panel9.TabIndex = 40;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Project3.Properties.Resources.жидкость;
-            this.pictureBox3.Location = new System.Drawing.Point(123, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Visible = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::Project3.Properties.Resources.газ;
-            this.pictureBox13.Location = new System.Drawing.Point(245, 4);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox13.TabIndex = 12;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Visible = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Project3.Properties.Resources.твердое;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Visible = false;
-            // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.pictureBox7);
             this.panel8.Controls.Add(this.pictureBox5);
@@ -807,77 +752,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(350, 175);
             this.panel8.TabIndex = 13;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Project3.Properties.Resources.бумага;
-            this.pictureBox7.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Visible = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Project3.Properties.Resources.стекло;
-            this.pictureBox5.Location = new System.Drawing.Point(176, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Visible = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Project3.Properties.Resources.пластмасса;
-            this.pictureBox6.Location = new System.Drawing.Point(90, -1);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Visible = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Project3.Properties.Resources.древесина;
-            this.pictureBox8.Location = new System.Drawing.Point(262, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Visible = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::Project3.Properties.Resources.еда;
-            this.pictureBox11.Location = new System.Drawing.Point(176, 89);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox11.TabIndex = 10;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Visible = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Project3.Properties.Resources.метал;
-            this.pictureBox9.Location = new System.Drawing.Point(3, 89);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Visible = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Project3.Properties.Resources.резина;
-            this.pictureBox10.Location = new System.Drawing.Point(89, 89);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox10.TabIndex = 9;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Visible = false;
             // 
             // dateTimePicker1
             // 
@@ -910,28 +784,12 @@
             this.label6.TabIndex = 46;
             this.label6.Text = "Здравствуйте, Максим. Приятно вас видеть.";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(39, 76);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox1.TabIndex = 47;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Location = new System.Drawing.Point(11, 84);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(350, 250);
-            this.pictureBox12.TabIndex = 48;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
-            // 
             // pp1
             // 
-            this.pp1.Controls.Add(this.panel8);
+            this.pp1.BackColor = System.Drawing.SystemColors.Control;
             this.pp1.Controls.Add(this.panel9);
             this.pp1.Controls.Add(this.pictureBox2);
+            this.pp1.Controls.Add(this.panel8);
             this.pp1.Location = new System.Drawing.Point(7, 52);
             this.pp1.Name = "pp1";
             this.pp1.Size = new System.Drawing.Size(369, 453);
@@ -969,6 +827,126 @@
             this.label7.Text = "Остальные заказы";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(350, 350);
+            this.pictureBox1.TabIndex = 47;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.White;
+            this.pictureBox12.Location = new System.Drawing.Point(11, 84);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(350, 250);
+            this.pictureBox12.TabIndex = 48;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Project3.Properties.Resources.liquid;
+            this.pictureBox3.Location = new System.Drawing.Point(201, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Project3.Properties.Resources.solid;
+            this.pictureBox4.Location = new System.Drawing.Point(37, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(11, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(350, 131);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Project3.Properties.Resources.paper;
+            this.pictureBox7.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Project3.Properties.Resources.glass;
+            this.pictureBox5.Location = new System.Drawing.Point(176, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Project3.Properties.Resources.plastic;
+            this.pictureBox6.Location = new System.Drawing.Point(90, -1);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Project3.Properties.Resources.wood;
+            this.pictureBox8.Location = new System.Drawing.Point(262, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox8.TabIndex = 7;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Project3.Properties.Resources.food;
+            this.pictureBox11.Location = new System.Drawing.Point(176, 89);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox11.TabIndex = 10;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Visible = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Project3.Properties.Resources.metal;
+            this.pictureBox9.Location = new System.Drawing.Point(3, 89);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox9.TabIndex = 8;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Visible = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Project3.Properties.Resources.rubber;
+            this.pictureBox10.Location = new System.Drawing.Point(89, 89);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox10.TabIndex = 9;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -976,9 +954,6 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(890, 558);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.pp3);
-            this.Controls.Add(this.pp2);
-            this.Controls.Add(this.pp1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.dateTimePicker1);
@@ -987,6 +962,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pp2);
+            this.Controls.Add(this.pp1);
+            this.Controls.Add(this.pp3);
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1009,12 +987,16 @@
             this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel8.ResumeLayout(false);
+            this.pp1.ResumeLayout(false);
+            this.pp2.ResumeLayout(false);
+            this.pp3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -1022,11 +1004,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.pp1.ResumeLayout(false);
-            this.pp2.ResumeLayout(false);
-            this.pp3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1069,7 +1046,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.CheckBox gas;
         private System.Windows.Forms.CheckBox liquid;
         private System.Windows.Forms.CheckBox solid;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -1082,7 +1058,6 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.CheckBox wood;
