@@ -72,5 +72,7 @@ namespace Project3
             this.Close();
             f2.Show();
         }
+
+ 
     }
 }

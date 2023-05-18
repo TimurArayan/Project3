@@ -24,6 +24,12 @@ namespace Project3
             dateTimePicker1.MinDate = DateTime.Now.AddDays(1);
             RefreshPrice();
             radioButton1.Checked = false;
+            button1.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.BorderSize = 0;
+            button5.FlatAppearance.BorderSize = 0;
+            button6.FlatAppearance.BorderSize = 0;
+            button7.FlatAppearance.BorderSize = 0;
         }
 
         public void RefreshPrice()
@@ -49,7 +55,7 @@ namespace Project3
                 dataBase.openConnection();
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    MessageBox.Show("Заказ сделан");
+                    MessageBox.Show("Заказ сделан. Вы моежете посмотреть его в списке.");
                 }
                 else
                 {
@@ -102,12 +108,16 @@ namespace Project3
             {
                 panel3.Hide();
                 panel2.Show();
+                pp1.Hide();
+                pp2.Show();
+
             }
             else if (gas.Checked)
             {
                 panel3.Hide();
                 panel2.Show();
-                MessageBox.Show($"{About.trash_type1}, {About.trash_type2}, {About.trash_type3}");
+                pp1.Hide();
+                pp2.Show();
             }
             else
             {
@@ -125,6 +135,8 @@ namespace Project3
             {
                 panel2.Hide();
                 panel1.Show();
+                pp2.Hide();
+                pp3.Show();
             }
             
         }
@@ -136,6 +148,9 @@ namespace Project3
             About.trash_type3 = null;
             panel2.Hide();
             panel3.Show();
+            pp1.Show();
+            pp2.Hide();
+
         }
         private void button4_Click(object sender, EventArgs e)
         {
@@ -143,6 +158,8 @@ namespace Project3
             About.car_type = null;
             panel1.Hide();
             panel2.Show();
+            pp3.Hide();
+            pp2.Show();
         }
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -651,20 +668,40 @@ namespace Project3
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
             Form4 f4 = new Form4();
             f4.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form2 f2 = new Form2();
-            f2.Show();
-            this.Close();
-            
-        }
+        //////
+        ///Картинки кликать
+        //////
+
+
     }
 
 }
