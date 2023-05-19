@@ -7,10 +7,10 @@ using System.Data.SqlClient;
 
 namespace Project3
 {
-    internal class DataBase
+    public class DataBase
     {
 
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-N4O5T8O\SQLEXPRESS01;Initial Catalog=project3;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-KGHREVN\SQLEXPRESS;Initial Catalog=project3;Integrated Security=True");
 
 
         public void openConnection()
